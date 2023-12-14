@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-powered YouTube Video Editor</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the AI-powered YouTube Video Editor</h1>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Upload Video</h2>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="video" id="video-upload-input" accept="video/*" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section id="editor-section">
+            <h2>Edit Video</h2>
+            <div id="video-preview"></div>
+            <div id="video-timeline"></div>
+            <div id="edit-panel">
+                <!-- Edit options will be dynamically added by JavaScript -->
+            </div>
+            <button id="save-button">Save</button>
+            <button id="export-button">Export</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 AI-powered YouTube Video Editor</p>
+    </footer>
+</body>
+</html>

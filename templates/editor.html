@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editor</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/main.js"></script>
+</head>
+<body>
+    <div id="editor-container">
+        <input type="file" id="{{ dom_element_ids['video_upload_input'] }}" accept="video/*">
+        <div id="{{ dom_element_ids['video_timeline'] }}"></div>
+        <div id="{{ dom_element_ids['video_preview'] }}"></div>
+        <div id="{{ dom_element_ids['edit_panel'] }}">
+            <button id="{{ dom_element_ids['save_button'] }}">Save</button>
+            <button id="{{ dom_element_ids['export_button'] }}">Export</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('{{ dom_element_ids['video_upload_input'] }}').addEventListener('change', function(event) {
+            // Logic to handle video file selection
+        });
+
+        document.getElementById('{{ dom_element_ids['save_button'] }}').addEventListener('click', function() {
+            // Logic to save the edited video
+        });
+
+        document.getElementById('{{ dom_element_ids['export_button'] }}').addEventListener('click', function() {
+            // Logic to export the edited video
+        });
+    </script>
+</body>
+</html>
