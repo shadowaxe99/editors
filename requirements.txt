@@ -1,5 +1,5 @@
 flask==2.0.2
-tensorflow==2.8.0
+tensorflow==2.11.1
 werkzeug==2.0.3
 unittest2==1.1.0
 jsonschema==4.4.0
